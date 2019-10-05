@@ -1,0 +1,54 @@
+<html>
+    <head>
+	<title> Exercise 3 </title>
+	<script type="text/javascript" src="formChecker.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+
+	<div class="center">
+	<h1> Online Hat Store </h1>
+
+    <form onsubmit="return validateForm();" action="customerBackend.php" method="post">
+	
+	Username (email address):
+	<br>
+	<input type="text" name="User" id="user">
+	<br>
+	Password:
+	<br>
+	<input type="text" name="Password" id="password">
+	<br>
+        <br> <br>
+	</div>
+
+	<div class="center">
+	<h3>Green Hat: $15</h3>
+
+
+	<img class="center" src="https://cdna.4imprint.com/prod/700/537693.jpg" style="width:300px;height:300px;"> <br>
+	Quantity:
+	<input type="text" name="quantity1" id="quantity1"><br><br><br> <br><br><br>
+
+        <h3>Brown Hat: $5 </h3>
+	<img class="center" src="https://cdn.pastemagazine.com/www/system/images/photo_albums/fashion-baseball-caps/large/incognito.jpg?1384968217" style="width:300px;height:300px;"> <br>
+	Quantity:
+	<input type="text" name="quantity2" id="quantity2"><br><br><br> <br><br><br>
+
+
+        <h3>Gray Hat: $35 </h3>
+	<img class="center" src="https://cdn.shopify.com/s/files/1/0022/4008/6074/products/V818BLK_800x.jpg?v=1556735589" style="width:300px;height:300px;"> <br>
+	Quantity:
+	<input type="text" name="quantity3" id="quantity3"><br><br>
+        Shipping Options:<br>
+	<input type="radio" name="hat3" id="1" value="Free 7 day"> Free 7 day<br>
+	<input type="radio" name="hat3" id="2" value="$50.00 over night"> $50.00 over night<br>
+	<input type="radio" name="hat3" id="3" value="$5.00 three day"> $5.00 three day<br> <br> <br><br><br>
+
+	<button class="center" onclick="resetForm()" type="button">Reset Form</button><br><br>
+
+        <input class="center" type="submit" value="Submit"><br><br><br><br>
+	</div>
+    </form>
+</body>
+</html> 
